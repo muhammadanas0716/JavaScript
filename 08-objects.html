@@ -15,6 +15,16 @@
     };
 
     console.log(product);
+    console.log(product.name);
+    console.log(product.price);
+
+    product.name = "cotton socks";
+    console.log(product);
+
+    console.log(JSON.stringify(product));
+    const JSON_STRING = JSON.stringify(product)
+    const PARSED = JSON.parse(JSON_STRING)
+    console.log(PARSED);
   </script>
 </body>
 
