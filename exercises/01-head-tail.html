@@ -86,10 +86,37 @@
   <div class="container">
     <h1>Head & Tail Game</h1>
     <div class="btn-container">
-      <button>Head</button>
-      <button>Tail</button>
+      <button onclick="playGame('Head');">Head</button>
+      <button onclick="playGame('Tail');">Tail</button>
     </div>
   </div>
+
+  <script>
+    // Array to define toss options
+    const tossOptions = ["Head", "Tail"];
+
+    // Function that makes the computer choose one of the options randomly
+    const chooseTossComputer = () => {
+      const i = Math.floor(Math.random() * tossOptions.length);
+      return tossOptions[i];
+    }
+
+    // Game Logic
+    const playGame = (playerMove) => {
+      const computerMove = chooseTossComputer(); // Get the computer's move
+
+      // Check if the player's move matches the computer's move
+      if (computerMove === playerMove) {
+        console.log(`You guessed it right! ${computerMove}, ${playerMove}`);;
+      } else {
+        console.log(`Try again! Computer chose ${computerMove}, you chose ${playerMove}`);;
+      }
+
+      //  (computerMove == playerMove) ? console.log(`Guessed it right! ${computerMove}, ${playerMove}`) : console.log(`Try again :D, ${computerMove}, ${playerMove}`);
+
+    }
+  </script>
+
 </body>
 
 </html>

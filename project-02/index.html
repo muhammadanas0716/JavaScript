@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+
+  <style>
+    body {
+      background-color: bisque;
+      font-family: 'Courier New', Courier, monospace;
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+
+    input {
+      padding: 0.3rem 0.4rem;
+      font-size: 1rem;
+      border: 1.5px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      transition: all 0.2s ease;
+      background-color: #f9f9f9;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 0.5rem 0.2rem;
+      background-color: salmon;
+      border: 1px solid gray;
+      width: 120px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 1.0rem;
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+      transition: all 0.15s ease-in-out;
+    }
+
+    button:active {
+      transform: scale(0.94);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>BMI Calculator</h1>
+
+  <div>
+    <input type="number" name="weight" id="weight">
+    <label for="weight">Enter Weight in Kilograms (KG)</label>
+    <br><br>
+    <input type="number" name="height" id="height">
+    <label for="height">Enter Weight in Height (meters)</label>
+
+    <br><br>
+    <button onclick="getBMI()">Submit</button>
+
+    <br><br>
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

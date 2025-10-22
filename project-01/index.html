@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color Changer</title>
+
+  <style>
+    body {
+      background-color: bisque;
+      font-family: 'Courier New', Courier, monospace;
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+
+    button {
+      padding: 2rem;
+      margin: 2rem;
+      width: 180px;
+      height: 180px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      transition: all 0.15s ease-in-out;
+    }
+
+    button:active {
+      transform: scale(0.94);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Background Color Changer</h1>
+  <div>
+    <button style="background-color: salmon;" id="salmon" onclick="changeColor('salmon')">Salmon</button>
+    <button style="background-color: lightblue;" id="blue" onclick="changeColor('lightblue')">Blue</button>
+    <button style="background-color: lightgreen;" id="green" onclick="changeColor('lightgreen')">Green</button>
+    <button style="background-color: lavender;" id="lavenderblush" onclick="changeColor('lavender')">Lavender</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
